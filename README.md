@@ -7,3 +7,4 @@ For RQ2
    b. Only AST: claude_ast.ipynb
    c. AST + prose thinking: claude_ast_with_thinking.ipynb
    d. claude_summary_flowgraph
+3. Don't forget to change the batch variable in cell 2 to the one of your liking
