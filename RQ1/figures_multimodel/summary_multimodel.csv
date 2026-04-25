@@ -1,0 +1,9 @@
+model,approach,pass_at_1,codebleu_mean,codebleu_std,cc_delta_mean,cc_delta_std,loc_delta_mean,loc_delta_std,avg_tokens,n_tasks
+GPT-OSS 120B,direct,0.573,0.279,0.319,0.588,1.462,1.378,3.89,373,164
+GPT-OSS 120B,mermaid,0.549,0.439,0.402,0.168,0.61,1.018,2.129,838,164
+Llama 3 70B,direct,0.463,0.314,0.367,0.119,1.156,-0.018,2.561,169,164
+Llama 3 70B,mermaid,0.476,0.308,0.368,0.32,0.954,0.939,2.203,450,164
+Llama 4 Scout,direct,0.774,0.341,0.364,-0.149,1.811,-0.396,3.984,304,164
+Llama 4 Scout,mermaid,0.878,0.756,0.131,0.558,1.474,1.878,3.389,988,164
+Qwen3 32B,direct,0.415,0.083,0.216,0.049,0.964,0.213,2.6,896,164
+Qwen3 32B,mermaid,0.433,0.313,0.414,-0.034,0.768,0.079,1.65,2271,164

@@ -1,0 +1,24 @@
+\begin{table}[ht]
+  \centering
+  \caption{Multi-model HumanEval Round-Trip Results (164 tasks). Best value per metric pair in \textbf{bold}. Mermaid vs.\ Direct significance (Mann--Whitney $U$, two-sided): $^{*}p{<}0.05$, $^{**}p{<}0.01$, $^{***}p{<}0.001$.}
+  \label{tab:rq1_humaneval_multimodel_results}
+  \resizebox{\columnwidth}{!}{
+  \begin{tabular}{ll r r r r r}
+    \toprule
+    \textbf{Model} & \textbf{Approach} & \textbf{Pass@1} & \textbf{CodeBLEU} & \textbf{CC $\Delta$} & \textbf{LOC $\Delta$} & \textbf{Avg Tokens} \\
+    \midrule
+    \multirow{2}{*}{\textbf{GPT-OSS 120B}} & Direct & \textbf{0.573} & 0.279$\pm$0.319 & +0.59$\pm$1.46 & +1.4$\pm$3.9 & \textbf{373} \\
+     & Mermaid & 0.549 & \textbf{0.439$\pm$0.402$^{**}$} & \textbf{+0.17$\pm$0.61$^{***}$} & \textbf{+1.0$\pm$2.1} & 838 \\
+    \addlinespace
+    \multirow{2}{*}{\textbf{Llama 3 70B}} & Direct & 0.463 & \textbf{0.314$\pm$0.367} & \textbf{+0.12$\pm$1.16} & \textbf{-0.0$\pm$2.6} & \textbf{169} \\
+     & Mermaid & \textbf{0.476} & 0.308$\pm$0.368 & +0.32$\pm$0.95$^{**}$ & +0.9$\pm$2.2$^{***}$ & 450 \\
+    \addlinespace
+    \multirow{2}{*}{\textbf{Llama 4 Scout}} & Direct & 0.774 & 0.341$\pm$0.364 & \textbf{-0.15$\pm$1.81} & \textbf{-0.4$\pm$4.0} & \textbf{304} \\
+     & Mermaid & \textbf{0.878} & \textbf{0.756$\pm$0.131$^{***}$} & +0.56$\pm$1.47$^{***}$ & +1.9$\pm$3.4$^{***}$ & 988 \\
+    \addlinespace
+    \multirow{2}{*}{\textbf{Qwen3 32B}} & Direct & 0.415 & 0.083$\pm$0.216 & +0.05$\pm$0.96 & +0.2$\pm$2.6 & \textbf{896} \\
+     & Mermaid & \textbf{0.433} & \textbf{0.313$\pm$0.414$^{**}$} & \textbf{-0.03$\pm$0.77} & \textbf{+0.1$\pm$1.7} & 2271 \\
+    \bottomrule
+  \end{tabular}
+  }
+\end{table}
